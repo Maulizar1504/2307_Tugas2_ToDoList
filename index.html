@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="text-2xl font-bold mb-4">To-Do List</h1>
+        <input type="text" id="taskInput" placeholder="Tambahkan tugas..." class="border p-2 rounded w-full mb-4">
+        <button onclick="addTask()" class="bg-green-600 text-white px-4 py-2 rounded">Tambah</button>
+        
+        <div class="task-list" id="taskList"></div>
+    </div>
+
+    <div id="popupEdit">
+        <h2>Edit Tugas</h2>
+        <input type="text" id="editTaskInput" class="border p-2 rounded w-full mb-4">
+        <button onclick="saveEdit()" class="bg-blue-500 text-white px-4 py-2 rounded">Simpan</button>
+        <button onclick="closePopup()" class="bg-gray-500 text-white px-4 py-2 rounded">Batal</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
